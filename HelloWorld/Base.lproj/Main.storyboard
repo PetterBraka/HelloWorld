@@ -15,17 +15,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HelloWorld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xZ-6h-TrS">
-                                <rect key="frame" x="165.5" y="437.5" width="83.5" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="94A-bu-ROu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-8v-0Kb" userLabel="fistButton">
+                                <rect key="frame" x="132" y="433" width="150" height="30"/>
+                                <state key="normal" title="Sign in with Facebook">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6D0-Uv-Yi3" userLabel="secondButton">
+                                <rect key="frame" x="141" y="473" width="132" height="30"/>
+                                <state key="normal" title="Sign in with Google">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Faa-uL-A3H" userLabel="thirdButton">
+                                <rect key="frame" x="145.5" y="513" width="123" height="30"/>
+                                <state key="normal" title="Sign in with Apple">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAk-V3-sbN">
+                                <rect key="frame" x="105" y="392" width="204" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2L-qd-W5w">
+                                <rect key="frame" x="151.5" y="259" width="111.5" height="103"/>
+                                <string key="text">Social
+Squid</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="4xZ-6h-TrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MXV-yy-RsA"/>
-                            <constraint firstItem="4xZ-6h-TrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OSS-WM-epO"/>
+                            <constraint firstItem="dAk-V3-sbN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="33g-R4-J3e"/>
+                            <constraint firstItem="dAk-V3-sbN" firstAttribute="top" secondItem="N2L-qd-W5w" secondAttribute="bottom" constant="30" id="A9S-93-z3B"/>
+                            <constraint firstItem="N2L-qd-W5w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ajy-V4-E5h"/>
+                            <constraint firstItem="94A-bu-ROu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BlJ-pa-VKJ"/>
+                            <constraint firstAttribute="trailing" secondItem="94A-bu-ROu" secondAttribute="trailing" id="FO9-lO-s4l"/>
+                            <constraint firstItem="6D0-Uv-Yi3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qo4-hS-yYj"/>
+                            <constraint firstAttribute="bottom" secondItem="94A-bu-ROu" secondAttribute="bottom" id="UYE-KA-83a"/>
+                            <constraint firstItem="6D0-Uv-Yi3" firstAttribute="top" secondItem="Gg9-8v-0Kb" secondAttribute="bottom" constant="10" id="Y5b-1f-emp"/>
+                            <constraint firstItem="Faa-uL-A3H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zam-X8-Pys"/>
+                            <constraint firstItem="Faa-uL-A3H" firstAttribute="top" secondItem="6D0-Uv-Yi3" secondAttribute="bottom" constant="10" id="bFP-uW-Ev7"/>
+                            <constraint firstItem="Gg9-8v-0Kb" firstAttribute="top" secondItem="dAk-V3-sbN" secondAttribute="bottom" constant="20" id="cpR-kr-24c"/>
+                            <constraint firstItem="Gg9-8v-0Kb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctU-tJ-Fuo"/>
+                            <constraint firstItem="Gg9-8v-0Kb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kD1-6T-CO5"/>
+                            <constraint firstItem="94A-bu-ROu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u2d-vf-rJV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
