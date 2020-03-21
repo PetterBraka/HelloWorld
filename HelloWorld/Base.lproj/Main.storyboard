@@ -15,17 +15,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HelloWorld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xZ-6h-TrS">
-                                <rect key="frame" x="165.5" y="437.5" width="83.5" height="21"/>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EWY-nr-gCu">
+                                <rect key="frame" x="120" y="308.5" width="174" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP1-k3-Gqc">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="30"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="   Sign in with Facebook   ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF7-CM-SfN">
+                                        <rect key="frame" x="0.0" y="40" width="174" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="   Sign in with Google   ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osY-mm-Kmg">
+                                        <rect key="frame" x="0.0" y="80" width="174" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Sign in with Apple">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sP1-k3-Gqc" firstAttribute="leading" secondItem="EWY-nr-gCu" secondAttribute="leading" id="3mU-BB-meh"/>
+                                    <constraint firstItem="AF7-CM-SfN" firstAttribute="leading" secondItem="EWY-nr-gCu" secondAttribute="leading" id="fNC-ZH-XdT"/>
+                                    <constraint firstAttribute="trailing" secondItem="osY-mm-Kmg" secondAttribute="trailing" id="i7u-fT-6He"/>
+                                    <constraint firstAttribute="trailing" secondItem="AF7-CM-SfN" secondAttribute="trailing" id="kRq-Bj-Ska"/>
+                                    <constraint firstAttribute="trailing" secondItem="sP1-k3-Gqc" secondAttribute="trailing" id="wfr-L3-TVf"/>
+                                    <constraint firstItem="osY-mm-Kmg" firstAttribute="leading" secondItem="EWY-nr-gCu" secondAttribute="leading" id="zk8-pp-z14"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAN-ji-X9a">
+                                <rect key="frame" x="157.5" y="144" width="99.5" height="84"/>
+                                <string key="text">Social
+squid</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIf-PE-Ecz">
+                                <rect key="frame" x="105" y="268" width="204" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDs-2o-pYP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="4xZ-6h-TrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MXV-yy-RsA"/>
-                            <constraint firstItem="4xZ-6h-TrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OSS-WM-epO"/>
+                            <constraint firstItem="dDs-2o-pYP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DYr-V1-0Nn"/>
+                            <constraint firstItem="lIf-PE-Ecz" firstAttribute="top" secondItem="bAN-ji-X9a" secondAttribute="bottom" constant="40" id="O33-2C-yMr"/>
+                            <constraint firstItem="bAN-ji-X9a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OQt-dA-Hyb"/>
+                            <constraint firstItem="EWY-nr-gCu" firstAttribute="top" secondItem="lIf-PE-Ecz" secondAttribute="bottom" constant="20" id="SWM-U5-CHh"/>
+                            <constraint firstItem="EWY-nr-gCu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SbD-2A-oGx"/>
+                            <constraint firstItem="bAN-ji-X9a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="T6q-62-Q1H"/>
+                            <constraint firstAttribute="trailing" secondItem="dDs-2o-pYP" secondAttribute="trailing" id="VSv-Tu-BIm"/>
+                            <constraint firstItem="dDs-2o-pYP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cdf-6e-fc7"/>
+                            <constraint firstAttribute="bottom" secondItem="dDs-2o-pYP" secondAttribute="bottom" id="h9A-st-kYf"/>
+                            <constraint firstItem="lIf-PE-Ecz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5X-hW-DGh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
