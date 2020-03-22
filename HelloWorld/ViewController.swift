@@ -42,6 +42,23 @@ class ViewController: UIViewController {
             String.init(player)
         let ai = Int.random(in: 5..<28)
         aiScore.text = String.init(ai)
+        if player < ai {
+            //player lost
+            let alertLoss = UIAlertController(title: "Sorry", message:
+                "You lost the game", preferredStyle: .alert)
+            alertLoss.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertLoss, animated: true, completion: nil)
+        } else if player == ai {
+            //Its a draw
+            let alertDraw = UIAlertController(title: "Thats unlucky", message: "It's a draw", preferredStyle: .alert)
+            alertDraw.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertDraw, animated: true, completion: nil)
+        } else if player > ai {
+            //player won
+            let alertWin = UIAlertController(title: "Look at that", message: "You won \nCongratulations!", preferredStyle: .alert)
+            alertWin.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertWin, animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad() {
