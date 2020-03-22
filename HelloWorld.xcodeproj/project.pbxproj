@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33566A4924267F890010486A /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33566A4924267F890010486A /* CardsWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33566A4C24267F890010486A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33566A4E24267F890010486A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		33566A5024267F890010486A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		33566A4A24267F890010486A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				33566A4924267F890010486A /* HelloWorld.app */,
+				33566A4924267F890010486A /* CardsWar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = HelloWorld;
 			productName = HelloWorld;
-			productReference = 33566A4924267F890010486A /* HelloWorld.app */;
+			productReference = 33566A4924267F890010486A /* CardsWar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,9 +292,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.braka.HelloWorld;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CardsWar;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,9 +310,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.braka.HelloWorld;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CardsWar;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
